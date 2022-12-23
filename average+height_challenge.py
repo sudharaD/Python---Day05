@@ -13,3 +13,5 @@ for student_height in heights:
 average_height = round(total_of_heights / 10, 2)
 
 print(f"Average height is {average_height}")
+
+print(sum())
