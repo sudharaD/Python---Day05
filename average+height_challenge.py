@@ -3,7 +3,7 @@ import random
 heights = []
 total_of_heights = 0
 
-for i in range(10):
+for i in range(0, 10):  # => 10
     height = random.uniform(135.0, 180.1)
     heights.append(round(height, 1))
 
