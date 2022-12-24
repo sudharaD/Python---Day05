@@ -36,11 +36,17 @@ elif letter_count == 1:
     else:
         capital_letter_count = letter_count
 
-for i in range(simple_letter_count):
+for i in range(1, simple_letter_count + 1):
     password.append(random.choice(simple_letters))
 
-for i in range(capital_letter_count):
+for i in range(1, capital_letter_count + 1):
     password.append(random.choice(capital_letters))
+
+for i in range(1, number_count + 1):
+    password.append(random.choice(numbers))
+
+for i in range(1, symbol_count + 1):
+    password.append(random.choice(symbols))
 
 print(password)
 
