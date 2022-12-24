@@ -20,15 +20,8 @@ while True:
         print("Please enter valid integers as inputs")
 
 if letter_count > 1:
-    letter_count_1 = round(letter_count / 2)
-    letter_count_2 = letter_count - letter_count_1
-
-    if random.randint(1, 2) == 1:
-        simple_letter_count = letter_count_1
-        capital_letter_count = letter_count_2
-    else:
-        simple_letter_count = letter_count_2
-        capital_letter_count = letter_count_1
+    simple_letter_count = random.randint(1, letter_count)
+    capital_letter_count = letter_count - simple_letter_count
 
 elif letter_count == 1:
     if random.randint(1, 2) == 1:
@@ -50,10 +43,9 @@ for i in range(1, symbol_count + 1):
 
 print(password)
 
-# def shuffle_string(string):
-#     string_list = list(string)
-#     random.shuffle(string_list)
-#     return ''.join(string_list)
+def shuffle_password(password):
+    random.shuffle(password)
+    return ''.join(password)
 
-# shuffled_string = shuffle_string("Hello, World!")
-# print(shuffled_string)
+shuffled_password = shuffle_password(password)
+print(f"Here is your password: {shuffled_password}")
