@@ -14,5 +14,3 @@ for number in range(2, 101, 2):
 
 print(total)
 
-hello = ["H", "E", "L"]
-print(type(str(hello)))
